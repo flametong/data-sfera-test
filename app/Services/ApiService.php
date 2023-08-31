@@ -77,7 +77,8 @@ class ApiService
 
     private function getHandlerClassName(string $collection): string
     {
-        return 'App\Services\Handlers\\' . 
+        return 
+            'App\Services\Handlers\\' . 
             ucfirst($collection)      . 
             'CollectionHandler';
     }
